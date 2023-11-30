@@ -1,0 +1,16 @@
+from mojo import Value
+
+
+# Mojograd!
+fn main():
+    var a = Value(2.0)
+    var b = Value(3.0)
+    var c: Float32 = 2.0
+    var d = b**c
+    var e = a + c
+    e.backward()
+
+    a.print()
+    b.print()
+    d.print()
+    e.print()
